@@ -1,4 +1,29 @@
 '''
-added
-We will do algebratic commands
+This script contains an example class that we will write. The class will be called algebra, and it will contain some simple methods to do some algebratic manpulation.
+
+this script will end with a simple wat ro call and use the class.
 '''
+sample_int =5
+
+class Algrebra:
+    def __init__( self, x, y ) :
+    #we are defining the arguments as attributes of the object itself,
+        self.x = x 
+        self.y = y
+    def add ( self ) :
+        return self.x + self.y
+
+    def divide (self) :
+        return self.x / self.y
+    
+    def substract (self) :
+        return self.x - self.y
+
+    def multiply (self) :
+        return self.x * self.y
+
+    def complicated_algebra(self) :
+        return self.multiply() + self.substract()
+
+    def modify_x(self) :
+        self.x =self.x * 2

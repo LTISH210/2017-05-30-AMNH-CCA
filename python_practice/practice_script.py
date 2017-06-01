@@ -1,11 +1,10 @@
-'''
-This script contains an example class that we will write. The class will be called algebra, and it will contain some simple methods to do some algebratic manpulation.
+#This script contains an example class that we will write. The class will be called algebra, and it will contain some simple methods to do some algebratic manpulation.this script will end with a simple wat ro call and use the class.
 
-this script will end with a simple wat ro call and use the class.
-'''
+
 sample_int =5
+print sample_int
 
-class Algrebra:
+class Algebra:
     def __init__( self, x, y ) :
     #we are defining the arguments as attributes of the object itself,
         self.x = x 
@@ -27,3 +26,13 @@ class Algrebra:
 
     def modify_x(self) :
         self.x =self.x * 2
+
+if __name__ == "__main__":
+    
+    myalg = Algebra(100,150)
+    print myalg.multiply()
+    myalg.modify_x()
+    print myalg.multiply()
+else :
+    print "name not equal to main"
+    print __name__
